@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KSM Visual Artist</title>
+    <link rel="stylesheet" href="page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html">KSM</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+            
+            <div class="page-hero">
+                <h1>Let's Create Together</h1>
+                <p>Ready to bring your artistic vision to life? I'd love to hear about your project</p>
+            </div>
+        </header>
+        
+        <main class="page-main">
+            <section class="contact-section">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Send Me a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Select a project type</option>
+                                    <option value="Custom Painting">Custom Painting</option>
+                                    <option value="Photography Session">Photography Session</option>
+                                    <option value="Digital Art Commission">Digital Art Commission</option>
+                                    <option value="Art Direction">Art Direction</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="Under $1,000">Under $1,000</option>
+                                    <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                    <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                    <option value="Over $10,000">Over $10,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project vision, timeline, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">Sending...</span>
+                            </button>
+                        </form>
+                        
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">✉️</div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p>hello@ksm.art</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📞</div>
+                                <div class="info-content">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-content">
+                                    <h3>Location</h3>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">🕒</div>
+                                <div class="info-content">
+                                    <h3>Response Time</h3>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Follow Me</h3>
+                            <div class="social-grid">
+                                <a href="#" class="social-btn">📸 Instagram</a>
+                                <a href="#" class="social-btn">🐦 Twitter</a>
+                                <a href="#" class="social-btn">💼 LinkedIn</a>
+                                <a href="#" class="social-btn">🎨 Behance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="footer-logo">KSM</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="page-script.js"></script>
+    <script src="contact-script.js"></script>
+</body>
+</html>

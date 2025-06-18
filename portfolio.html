@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - KSM Visual Artist</title>
+    <link rel="stylesheet" href="page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html">KSM</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+            
+            <div class="page-hero">
+                <h1>My Portfolio</h1>
+                <p>A curated collection of my finest artworks spanning various mediums and artistic expressions</p>
+            </div>
+        </header>
+        
+        <main class="page-main">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="painting">Paintings</button>
+                <button class="filter-btn" data-filter="digital">Digital Art</button>
+                <button class="filter-btn" data-filter="photography">Photography</button>
+                <button class="filter-btn" data-filter="mixed">Mixed Media</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="painting">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=1" alt="Abstract Emotions">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Abstract Emotions</h3>
+                                <p>Oil on Canvas</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Abstract Emotions</h3>
+                        <p>Oil on Canvas • 2024 • 48x36 inches</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="digital">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=2" alt="Digital Dreams">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Digital Dreams</h3>
+                                <p>Digital Art</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Digital Dreams</h3>
+                        <p>Digital Art • 2024 • 4K Resolution</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="photography">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=3" alt="Urban Landscapes">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Urban Landscapes</h3>
+                                <p>Photography</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Urban Landscapes</h3>
+                        <p>Photography • 2023 • Limited Edition</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="painting">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=4" alt="Nature Symphony">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Nature's Symphony</h3>
+                                <p>Acrylic on Canvas</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Nature's Symphony</h3>
+                        <p>Acrylic on Canvas • 2023 • 60x40 inches</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mixed">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=5" alt="Mixed Realities">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Mixed Realities</h3>
+                                <p>Mixed Media</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Mixed Realities</h3>
+                        <p>Mixed Media • 2024 • 36x48 inches</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="digital">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=6" alt="Geometric Visions">
+                        <div class="item-overlay">
+                            <div class="overlay-content">
+                                <h3>Geometric Visions</h3>
+                                <p>Digital Art</p>
+                                <button class="view-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Geometric Visions</h3>
+                        <p>Digital Art • 2023 • NFT Collection</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="footer-logo">KSM</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="page-script.js"></script>
+</body>
+</html>

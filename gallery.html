@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KSM Visual Artist</title>
+    <link rel="stylesheet" href="page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html">KSM</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="gallery.html" class="active">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+            
+            <div class="page-hero">
+                <h1>Art Gallery</h1>
+                <p>Experience my artworks in a virtual gallery setting</p>
+            </div>
+        </header>
+        
+        <main class="page-main">
+            <div class="gallery-container">
+                <div class="gallery-wall">
+                    <div class="artwork-frame large">
+                        <img src="https://picsum.photos/600/800?random=10" alt="Featured Artwork">
+                        <div class="frame-label">Abstract Emotions Series #1</div>
+                    </div>
+                    <div class="artwork-frame medium">
+                        <img src="https://picsum.photos/400/500?random=11" alt="Gallery Artwork">
+                        <div class="frame-label">Digital Dreams</div>
+                    </div>
+                    <div class="artwork-frame small">
+                        <img src="https://picsum.photos/300/400?random=12" alt="Gallery Artwork">
+                        <div class="frame-label">Urban Study #3</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-wall">
+                    <div class="artwork-frame medium">
+                        <img src="https://picsum.photos/500/600?random=13" alt="Gallery Artwork">
+                        <div class="frame-label">Nature's Symphony</div>
+                    </div>
+                    <div class="artwork-frame large">
+                        <img src="https://picsum.photos/700/500?random=14" alt="Gallery Artwork">
+                        <div class="frame-label">Geometric Visions</div>
+                    </div>
+                    <div class="artwork-frame small">
+                        <img src="https://picsum.photos/350/450?random=15" alt="Gallery Artwork">
+                        <div class="frame-label">Portrait Series #2</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-wall">
+                    <div class="artwork-frame small">
+                        <img src="https://picsum.photos/300/350?random=16" alt="Gallery Artwork">
+                        <div class="frame-label">Mixed Media #1</div>
+                    </div>
+                    <div class="artwork-frame medium">
+                        <img src="https://picsum.photos/450/550?random=17" alt="Gallery Artwork">
+                        <div class="frame-label">Digital Landscape</div>
+                    </div>
+                    <div class="artwork-frame large">
+                        <img src="https://picsum.photos/600/700?random=18" alt="Gallery Artwork">
+                        <div class="frame-label">Abstract Emotions Series #2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="gallery-btn" onclick="previousWall()">← Previous</button>
+                <span class="gallery-indicator">Gallery Wall 1 of 3</span>
+                <button class="gallery-btn" onclick="nextWall()">Next →</button>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="footer-logo">KSM</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="page-script.js"></script>
+    <script src="gallery-script.js"></script>
+</body>
+</html>

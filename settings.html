@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - KSM Visual Artist</title>
+    <link rel="stylesheet" href="page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html">KSM</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="settings.html" class="active">Settings</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+            
+            <div class="page-hero">
+                <h1>Settings</h1>
+                <p>Customize your experience and manage preferences</p>
+            </div>
+        </header>
+        
+        <main class="page-main">
+            <div class="settings-container">
+                <div class="settings-section">
+                    <h2>Display Preferences</h2>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Dark Mode</h3>
+                            <p>Toggle between light and dark themes</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="darkMode">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Animations</h3>
+                            <p>Enable or disable page animations</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="animations" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>Portfolio Options</h2>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Auto-play Gallery</h3>
+                            <p>Automatically cycle through gallery images</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="autoplay">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Image Quality</h3>
+                            <p>Choose image loading quality</p>
+                        </div>
+                        <div class="setting-control">
+                            <select id="imageQuality">
+                                <option value="high">High Quality</option>
+                                <option value="medium" selected>Medium Quality</option>
+                                <option value="low">Low Quality</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>Accessibility</h2>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Reduce Motion</h3>
+                            <p>Minimize animations for sensitive users</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="reduceMotion">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Font Size</h3>
+                            <p>Adjust text size for better readability</p>
+                        </div>
+                        <div class="setting-control">
+                            <select id="fontSize">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>About This Site</h2>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <strong>Version:</strong> 1.0.0
+                        </div>
+                        <div class="info-item">
+                            <strong>Last Updated:</strong> December 2024
+                        </div>
+                        <div class="info-item">
+                            <strong>Framework:</strong> HTML5, CSS3, JavaScript
+                        </div>
+                        <div class="info-item">
+                            <strong>Artist:</strong> KSM Visual Artist
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-actions">
+                    <button class="action-btn primary" onclick="saveSettings()">Save Settings</button>
+                    <button class="action-btn secondary" onclick="resetSettings()">Reset to Default</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="footer-logo">KSM</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="page-script.js"></script>
+    <script src="settings-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - KSM Visual Artist</title>
+    <link rel="stylesheet" href="page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html">KSM</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="shop.html" class="active">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+            
+            <div class="page-hero">
+                <h1>Art Shop</h1>
+                <p>Bring my artwork into your space with prints, originals, and exclusive pieces</p>
+            </div>
+        </header>
+        
+        <main class="page-main">
+            <div class="shop-filters">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="prints">Prints</button>
+                <button class="filter-btn" data-filter="originals">Originals</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+            </div>
+
+            <div class="shop-grid">
+                <div class="shop-item" data-category="prints">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=30" alt="Abstract Emotions Print">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Abstract Emotions Print</h3>
+                        <p class="item-description">High-quality giclee print on premium paper</p>
+                        <div class="item-price">$85</div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="shop-item" data-category="originals">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=31" alt="Digital Dreams Original">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="item-badge">Original</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Digital Dreams Original</h3>
+                        <p class="item-description">Original oil painting on canvas, 24x36 inches</p>
+                        <div class="item-price">$3,200</div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="shop-item" data-category="prints">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=32" alt="Urban Landscape Print">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Urban Landscape Print</h3>
+                        <p class="item-description">Limited edition print, numbered and signed</p>
+                        <div class="item-price">$125</div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="shop-item" data-category="digital">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=33" alt="NFT Collection">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="item-badge">NFT</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Geometric Visions NFT</h3>
+                        <p class="item-description">Exclusive digital artwork with blockchain certificate</p>
+                        <div class="item-price">0.5 ETH</div>
+                        <button class="add-to-cart-btn">Buy NFT</button>
+                    </div>
+                </div>
+
+                <div class="shop-item" data-category="prints">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=34" alt="Nature Symphony Print">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Nature's Symphony Print</h3>
+                        <p class="item-description">Canvas print with museum-quality materials</p>
+                        <div class="item-price">$95</div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="shop-item" data-category="originals">
+                    <div class="item-image">
+                        <img src="https://picsum.photos/400/500?random=35" alt="Mixed Media Original">
+                        <div class="item-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="item-badge">Original</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Mixed Media Composition</h3>
+                        <p class="item-description">Original mixed media artwork, 30x40 inches</p>
+                        <div class="item-price">$2,800</div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="cart-icon">🛒</div>
+                <span class="cart-count">0</span>
+                <span class="cart-total">$0.00</span>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="footer-logo">KSM</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="page-script.js"></script>
+    <script src="shop-script.js"></script>
+</body>
+</html>

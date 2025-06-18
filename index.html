@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSM - Visual Artist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">KSM</div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Landing Page -->
+    <div id="landing-page" class="landing-container">
+        <!-- Background Elements -->
+        <div class="bg-particles"></div>
+        <div class="bg-gradient"></div>
+        
+        <!-- Tablet Container - Now Horizontal -->
+        <div class="tablet-container" id="tablet">
+            <div class="tablet-screen">
+                <!-- Screen Content -->
+                <div class="screen-content">
+                    <!-- Status Bar -->
+                    <div class="status-bar">
+                        <div class="status-left">
+                            <span class="time">9:41 AM</span>
+                        </div>
+                        <div class="status-center">
+                            <div class="notch"></div>
+                        </div>
+                        <div class="status-right">
+                            <div class="battery"></div>
+                            <div class="wifi"></div>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="main-content">
+                        <!-- Left Side - Artist Info -->
+                        <div class="left-section">
+                            <div class="artist-logo">
+                                <h1 class="logo-text">KSM</h1>
+                                <p class="logo-subtitle">Visual Artist & Creative Visionary</p>
+                                <div class="logo-description">
+                                    Transforming emotions into visual poetry through the intersection of traditional artistry and digital innovation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Side - Interactive Grid -->
+                        <div class="right-section">
+                            <div class="app-grid">
+                                <!-- Portfolio Button -->
+                                <div class="app-button portfolio-btn" data-page="portfolio.html">
+                                    <div class="app-icon portfolio-icon">
+                                        <div class="icon-content">
+                                            <div class="palette-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Portfolio</span>
+                                </div>
+
+                                <!-- About Button -->
+                                <div class="app-button about-btn" data-page="about.html">
+                                    <div class="app-icon about-icon">
+                                        <div class="icon-content">
+                                            <div class="person-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">About</span>
+                                </div>
+
+                                <!-- Services Button -->
+                                <div class="app-button services-btn" data-page="services.html">
+                                    <div class="app-icon services-icon">
+                                        <div class="icon-content">
+                                            <div class="brush-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Services</span>
+                                </div>
+
+                                <!-- Gallery Button -->
+                                <div class="app-button gallery-btn" data-page="gallery.html">
+                                    <div class="app-icon gallery-icon">
+                                        <div class="icon-content">
+                                            <div class="camera-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Gallery</span>
+                                </div>
+
+                                <!-- Contact Button -->
+                                <div class="app-button contact-btn" data-page="contact.html">
+                                    <div class="app-icon contact-icon">
+                                        <div class="icon-content">
+                                            <div class="mail-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Contact</span>
+                                </div>
+
+                                <!-- Blog Button -->
+                                <div class="app-button blog-btn" data-page="blog.html">
+                                    <div class="app-icon blog-icon">
+                                        <div class="icon-content">
+                                            <div class="book-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Blog</span>
+                                </div>
+
+                                <!-- Shop Button -->
+                                <div class="app-button shop-btn" data-page="shop.html">
+                                    <div class="app-icon shop-icon">
+                                        <div class="icon-content">
+                                            <div class="cart-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Shop</span>
+                                </div>
+
+                                <!-- Social Button -->
+                                <div class="app-button social-btn" data-page="social.html">
+                                    <div class="app-icon social-icon">
+                                        <div class="icon-content">
+                                            <div class="share-icon"></div>
+                                        </div>
+                                    </div>
+                                    <span class="app-label">Social</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dock -->
+                    <div class="dock">
+                        <div class="dock-item home-dock" data-page="index.html">
+                            <div class="dock-icon">
+                                <div class="home-icon"></div>
+                            </div>
+                        </div>
+                        <div class="dock-item portfolio-dock" data-page="portfolio.html">
+                            <div class="dock-icon">
+                                <div class="folder-icon"></div>
+                            </div>
+                        </div>
+                        <div class="dock-item contact-dock" data-page="contact.html">
+                            <div class="dock-icon">
+                                <div class="message-icon"></div>
+                            </div>
+                        </div>
+                        <div class="dock-item settings-dock" data-page="settings.html">
+                            <div class="dock-icon">
+                                <div class="settings-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Action Buttons -->
+        <div class="floating-buttons">
+            <div class="fab-button fab-1" data-action="scroll-explore">
+                <div class="fab-icon">↓</div>
+                <span class="fab-tooltip">Scroll to Explore</span>
+            </div>
+            <div class="fab-button fab-2" data-action="quick-contact">
+                <div class="fab-icon">✉</div>
+                <span class="fab-tooltip">Quick Contact</span>
+            </div>
+            <div class="fab-button fab-3" data-action="theme-toggle">
+                <div class="fab-icon">🌙</div>
+                <span class="fab-tooltip">Dark Mode</span>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to Enter Portfolio</div>
+            <div class="scroll-arrow">
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Entry Page -->
+    <div id="portfolio-entry" class="portfolio-entry-container">
+        <div class="entry-content">
+            <div class="entry-header">
+                <h1 class="entry-title">Welcome to KSM's World</h1>
+                <p class="entry-subtitle">Where Art Meets Innovation</p>
+            </div>
+            
+            <div class="entry-grid">
+                <div class="entry-card" data-page="portfolio.html">
+                    <div class="card-image portfolio-preview"></div>
+                    <div class="card-content">
+                        <h3>Portfolio</h3>
+                        <p>Explore my latest artworks</p>
+                    </div>
+                </div>
+                
+                <div class="entry-card" data-page="about.html">
+                    <div class="card-image about-preview"></div>
+                    <div class="card-content">
+                        <h3>About</h3>
+                        <p>Learn about my journey</p>
+                    </div>
+                </div>
+                
+                <div class="entry-card" data-page="contact.html">
+                    <div class="card-image contact-preview"></div>
+                    <div class="card-content">
+                        <h3>Contact</h3>
+                        <p>Let's create together</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
